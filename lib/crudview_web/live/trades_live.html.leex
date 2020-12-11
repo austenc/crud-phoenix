@@ -1,0 +1,22 @@
+<table class="card-body table">
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Size</th>
+      <th>Entry Price</th>
+      <th>Exit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for trade <- @trades do %>
+    <tr>
+      <td><%= trade.symbol %></td>
+      <td><%= trade.size %> shares</td>
+      <td><%= trade.entry_price %></td>
+      <td><%= trade.exit_price %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= live_component @socket, CrudviewWeb.Pagination, assigns %>

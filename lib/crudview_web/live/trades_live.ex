@@ -1,4 +1,4 @@
-defmodule CrudviewWeb.PageLive do
+defmodule CrudviewWeb.TradesLive do
   use CrudviewWeb, :live_view
   alias Crudview.Trade
   alias Crudview.Repo
@@ -15,6 +15,8 @@ defmodule CrudviewWeb.PageLive do
       page_size: trades.page_size,
       total_pages: trades.total_pages,
       total_entries: trades.total_entries,
+      first_item: (trades.page_size * (trades.page_number - 1)) + 1,
+      last_item: (trades.page_size * (trades.page_number - 1)) + Enum.count(trades.entries)
     ]
   end
 

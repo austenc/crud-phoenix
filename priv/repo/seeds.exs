@@ -47,7 +47,7 @@ Crudview.Repo.insert!(%Crudview.Trade{
 })
 
 Crudview.Repo.insert!(%Crudview.Trade{
-  symbol: "CHAT",
+  symbol: "SUDO",
   size: 100,
   entry_price: 1000,
   exit_price: 1100,

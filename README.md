@@ -11,6 +11,13 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+
+## TO DO
+- [ ] Style the trades "index" cards to match livewire app
+- [ ] Add functions to calculate profit/loss and other stuff
+- [ ] Build a "add trade" form and explore validation / changesets
+
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
